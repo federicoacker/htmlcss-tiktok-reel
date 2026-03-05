@@ -174,12 +174,13 @@ button{
 .main-btn{
 	width: 60px;
 	height: 35px;
-	font-size:20px;
-	border-radius: 8px;
-	border-left: 2px solid #00FFFF;
-	border-right: 2px solid #FF00FF;
+	font-size:30px;
+	border-radius: 10px;
+	border-left: 3px solid #00FFFF;
+	border-right: 3px solid #FF00FF;
 	translate: 0 -25%;
 	background:white;
+	margin: 0 30px;
 }
 /*Home Button*/
 .home-btn{
@@ -247,6 +248,29 @@ button{
 }
 .messages-btn:hover::before{
 	content:"\F260";
+	color:rgba(255,255,255,1);
+}
+
+/*Profile Button*/
+.profile-btn{
+	color:rgba(255,255,255,0.6);
+	position:relative;
+	transition: color 0.3s ease;
+}
+.profile-btn::before{
+	display:block;
+	content:"\F4E1";
+	font-family:bootstrap-icons!important;
+	font-size:30px;
+	color:rgba(255,255,255,0.6);
+	transition:color 0.3s ease;
+}
+/*Profile Button Hovers*/
+.profile-btn:hover{
+	color:rgba(255,255,255,1);
+}
+.profile-btn:hover::before{
+	content:"\F4DA";
 	color:rgba(255,255,255,1);
 }
 /* ---------------------
