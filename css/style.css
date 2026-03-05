@@ -80,19 +80,6 @@ video {
 	translate:65% -50%;
 }
 
-/* Footer */
-
-footer {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: #fff;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
-
 /* Sidebar */
 .sidebar {
 	padding: 0 16px;
@@ -150,6 +137,44 @@ footer {
 	font-size:14px;
 }
 
+/* Footer */
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+
+	/* Inserisci qui sotto 
+	le tue regole, se necessario. */
+	display:flex;
+	background-color:black;
+	align-items:center;
+	justify-content:center;
+	
+}
+button{
+	border-style:none;
+	display:block;
+	color:black;
+	background-color:#FFFFFF;
+}
+.footer-button-container{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.main-btn{
+	width: 60px;
+	height: 35px;
+	font-size:20px;
+	border-radius: 8px;
+	border-left: 2px solid #00FFFF;
+	border-right: 2px solid #FF00FF;
+	translate: 0 -50%;
+}
 /* ---------------------
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
