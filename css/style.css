@@ -34,6 +34,50 @@ video {
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+	display:flex;
+	color:white;
+	min-height: 75px;
+}
+
+.header-nav-container{
+	display:flex;
+	width:calc(100%/2.5);
+	justify-content:space-around;
+
+}
+.header-icon{
+	width:calc(100%/6);
+	font-size:24px;
+	text-align:center;
+}
+.reel-header-nav-item{
+	width:calc(100%/4);
+	color: rgba(255,255,255,0.5);
+	text-decoration:none;
+	position:relative;
+	text-align:center;
+}
+.reel-header-nav-item:hover{
+	color:white;
+}
+.reel-header-nav-item:hover::after{
+	width:50%;
+	content:'';
+	border-bottom:3px solid white;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	translate:-50% 100%;
+}
+.nav-item-2::before{
+	font-family:bootstrap-icons!important;
+	content:"\f309";
+	color: rgba(255,0,0,0.3);
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:40px;
+	translate:65% -50%;
 }
 
 /* Footer */
@@ -73,11 +117,6 @@ da rimuovere una volta concluso
 	min-width: 80px;
 	min-height: 450px;
 	border: 2px dashed #ff0;
-}
-
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
 }
 
 /* --------------------- */
