@@ -167,6 +167,9 @@ button{
 	justify-content:space-around;
 	align-items:center;
 }
+.footer-button{
+	width:calc(100%/5);
+}
 /*Main Button*/
 .main-btn{
 	width: 60px;
@@ -198,6 +201,29 @@ button{
 }
 .home-btn:hover::before{
 	content:"\F424";
+	color:rgba(255,255,255,1);
+}
+
+/*Friends Button*/
+.friends-btn{
+	color:rgba(255,255,255,0.6);
+	position:relative;
+	transition: color 0.3s ease;
+}
+.friends-btn::before{
+	display:block;
+	content:"\F4D0";
+	font-family:bootstrap-icons!important;
+	font-size:30px;
+	color:rgba(255,255,255,0.6);
+	transition:color 0.3s ease;
+}
+/*Home Button Hovers*/
+.friends-btn:hover{
+	color:rgba(255,255,255,1);
+}
+.friends-btn:hover::before{
+	content:"\F4CF";
 	color:rgba(255,255,255,1);
 }
 /* ---------------------
